@@ -195,13 +195,13 @@ useEffect(() => {
                     onClick={() => ToggleChatSubTab('direct')}
                     id='direct-tab'
                     data-toggle='tab'
-                    
+                    href="../../#Global"
                     role='tab'
                     aria-controls='direct'
                     aria-selected='false'
                     data-to='chating'
                   >
-                    Daos
+                    Rooms
                   </NavLink>
                
                 </NavItem>
@@ -254,7 +254,7 @@ useEffect(() => {
                        <h6>{gb.roomId}</h6>
                      </div>
                      <div className="date-status">
-                       <div className="badge badge-primary sm">*</div>
+                       <div className="badge badge-primary sm">--</div>
                      </div>
                    </div>
                  </li>
@@ -309,8 +309,8 @@ useEffect(() => {
                           height={50}
                         />
                       </div>
-                      <div className="details">
-                        <h5>Make Solana greater</h5>
+                      <div className="details" > 
+                        <h5 >Make Solana greater</h5>
                         <h6>
                           Lorem Ipsum is simply dummy text the printing and
                           typesetting industry.

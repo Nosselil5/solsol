@@ -311,19 +311,19 @@ console.log('transactions',Transactions)
               <div className="block-content">
                 <ul className="document-list ">
                   <li>
-                  <a href="https://www.facebook.com"
+                  <a href="https://twitter.com/Solciety_Nfts"
                   target="_blank">
                     <h5 >Twitter</h5>
                     </a>
                   </li>
                   <li>
-                  <a href="https://www.facebook.com"
+                  <a 
                   target="_blank">
                     <h5>Discord</h5>
                     </a>
                   </li>
                   <li>
-                  <a href="https://www.facebook.com"
+                  <a 
                   target="_blank">
                     <h5>Mint link</h5>
                     </a>
@@ -339,6 +339,25 @@ console.log('transactions',Transactions)
     <div className="col-sm-7 position-relative">
     <br/>
       <div className="call-log-main custom-scroll">
+        
+        <div className="coll-log-group" onClick={() => setpageTre(false)}>
+          <div className="log-content-left ">
+            <div className="media">
+              <i className="fa-solid fa-coins" />
+              <div className="media-body nav-tabs subsections forhov">
+                <li data-to="contact-content" >
+                &nbsp; &nbsp; Treasury
+                </li>
+              </div>
+             
+            </div>
+          </div>
+          <div className="log-content-right">
+            <h6>
+            9.899059633 <strong> SOL </strong>
+            </h6>
+          </div>
+        </div>
         <div className="coll-log-group">
           <div className="log-content-left">
             <div className="media">
@@ -358,30 +377,12 @@ console.log('transactions',Transactions)
             </h6>
           </div>
         </div>
-        <div className="coll-log-group" onClick={() => setpageTre(false)}>
-          <div className="log-content-left ">
-            <div className="media">
-              <i className="fa-solid fa-coins" />
-              <div className="media-body nav-tabs ">
-                <li  >
-                Treasury
-                </li>
-              </div>
-             
-            </div>
-          </div>
-          <div className="log-content-right">
-            <h6>
-              3321 <strong> SOL </strong>
-            </h6>
-          </div>
-        </div>
         <div className="coll-log-group">
           <div className="log-content-left">
             <div className="media">
               <i className="fa-solid fa-user" />
               <div className="media-body nav-tabs subsections">
-                <li data-to="contact-content" onClick={toggleModal} > &nbsp; &nbsp;Members </li>
+                <li data-to="contact-content" onClick={toggleModal} > &nbsp; &nbsp; Members </li>
               </div>
             </div>
           </div>
@@ -480,7 +481,7 @@ console.log('transactions',Transactions)
                 <div className="media">
                   <div className="media-left">
                    
-                      <h5  style={{ color:"#55acee",paddingLeft: 4, position: "relative", top: 20 }}>ballence : {sol} SOL </h5>
+                      <h5  style={{ color:"#55acee",paddingLeft: 4, position: "relative", top: 20 }}>balence : {sol} SOL </h5>
                   
                   </div>
                   <div className="media-right">

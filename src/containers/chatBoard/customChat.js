@@ -589,7 +589,7 @@ setMessageText('')
                           <Trash2 />
                         </a>
                         <h5 onClick={() => setDeleteModal(!deleteModal)}>
-                          Donate
+                          Leave
                       </h5>
                       </li>
                       <li>
@@ -601,7 +601,7 @@ setMessageText('')
                           <Slash />
                         </a>
                         <h5 onClick={() => setBlockModal(!blockModal)}>
-                          Block
+                          Null  
                       </h5>
                       </li>
                     </ul>
@@ -735,20 +735,29 @@ setMessageText('')
       return(
         <div className='message-input'>
         <div className='wrap emojis-main'>
-          <input
-            className='setemoj'
-            id="chatin"
-            type='text'
-            placeholder='Write your message  ...'
-            onChange={e => setMessageText(e.target.value)}
-            value={messageText}
-          />
+        <input
+  className='setemoj'
+  id="chatin"
+  type='text'
+  placeholder=' Write your message  ...'
+  onChange={e => setMessageText(e.target.value)}
+  value={messageText}
+  onKeyPress={e => {
+    if (e.key === 'Enter' && messageText.trim()) { // Check if Enter was pressed and there is text
+      e.preventDefault(); // Prevent the default Enter key action (form submission, newline, etc.)
+      sendMessage(); // Call your sendMessage function
+    }
+  }}
+/>
+          
           <button
             className={`submit icon-btn btn-primary $`}
             onClick={sendMessage}
           >
+            
             <Send />
           </button>
+          
         </div>
       </div>
       )
